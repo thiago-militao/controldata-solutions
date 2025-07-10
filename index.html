@@ -35,17 +35,20 @@
 
     header .container {
       max-width: 1200px;
+      width: 100%;
       margin: 0 auto;
-      padding: 0 2rem;           /* Sem padding vertical! */
+      padding-left: 0;           /* Remove padding à esquerda */
+      padding-right: 2rem;       /* Mantém espaçamento à direita */
       display: flex;
       justify-content: space-between;
-      align-items: center;       /* Centraliza verticalmente */
+      align-items: center;
     }
 
     .logo {
       height: auto;
-      max-height: 80px;          /* Altura controlada sem estourar */
+      max-height: 80px;
       width: auto;
+      display: block;            /* Evita espaçamento inline */
     }
 
     nav a {
@@ -144,6 +147,7 @@
         align-items: center;
         text-align: center;
         gap: 1rem;
+        padding: 1rem 2rem; /* Para não colar no mobile */
       }
 
       .logo {
