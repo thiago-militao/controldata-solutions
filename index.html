@@ -3,35 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-    <!-- Meta tags for social media sharing -->
-    <meta property="og:title" content="Apresentação">
-    <meta property="og:description" content="Confira nossa apresentação interativa">
-    <meta property="og:image" content="https://cdnc.heyzine.com/flip-book/cover/2b5c71d8f8.jpg">
-    <meta property="og:url" content="">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card meta tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Apresentação">
-    <meta name="twitter:description" content="Confira nossa apresentação interativa">
-    <meta name="twitter:image" content="https://cdnc.heyzine.com/flip-book/cover/2b5c71d8f8.jpg">
-    
-    <!-- WhatsApp and other platforms -->
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Capa da Apresentação">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:locale" content="pt_BR">
-    <meta property="og:site_name" content="Apresentação">
-    
-    <!-- Additional meta tags for WhatsApp -->
-    <meta name="description" content="Confira nossa apresentação interativa">
-    <meta name="thumbnail" content="https://cdnc.heyzine.com/flip-book/cover/2b5c71d8f8.jpg">
-    
+
+  <!-- Meta tags for social media sharing -->
+  <meta property="og:title" content="Apresentação">
+  <meta property="og:description" content="Confira nossa apresentação interativa">
+  <meta property="og:image" content="https://cdnc.heyzine.com/flip-book/cover/2b5c71d8f8.jpg">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Apresentação">
+  <meta name="twitter:description" content="Confira nossa apresentação interativa">
+  <meta name="twitter:image" content="https://cdnc.heyzine.com/flip-book/cover/2b5c71d8f8.jpg">
+
+  <!-- WhatsApp and other platforms -->
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Capa da Apresentação">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Apresentação">
+
+  <!-- Additional meta tags for WhatsApp -->
+  <meta name="description" content="Confira nossa apresentação interativa">
+  <meta name="thumbnail" content="https://cdnc.heyzine.com/flip-book/cover/2b5c71d8f8.jpg">
+
   <title>Controldata Solutions</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
   <style>
     * {
       margin: 0;
@@ -46,10 +47,14 @@
     header {
       background-color: #0d1b2a;
       color: #fff;
-      padding: 1rem 2rem;
+      padding: 0.5rem 2rem; /* padding vertical reduzido para faixa não expandir muito */
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+    .logo {
+      height: 100px;  /* altura ajustada */
+      width: auto;
     }
     nav a {
       color: #fff;
@@ -67,7 +72,6 @@
       background-color: rgba(0, 0, 0, 0.5);
       z-index: 0;
     }
-
     .banner {
       position: relative;
       height: 80vh;
@@ -131,23 +135,19 @@
     }
   </style>
 </head>
+
 <body>
   <header>
-  <a href="/">
-  <img src="Logo6.png" alt="Controldata Solutions" style="width: 250px; height: auto;">
+    <a href="/">
+      <img src="Logo6.png" alt="Controldata Solutions" class="logo">
+    </a>
 
-</a>
-
-
-
-
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#contato">Contato</a>
-  </nav>
-</header>
-
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
   <div class="banner">
     <h1>De dados a decisões: informação que impulsiona resultados.</h1>
@@ -191,16 +191,15 @@
     </div>
   </section>
 
- <section id="contato">
-  <h2 style="margin-bottom: 0.5rem;">Contato</h2>
-  <p style="margin-bottom: 1rem;">Fale com a gente:</p>
-  <div class="contato-links" style="display: flex; flex-direction: column; gap: 0.75rem;">
-    <a href="mailto:contato@controldata.com.br"><i class="fas fa-envelope"></i> contato@controldata.com.br</a>
-    <a href="https://www.linkedin.com/company/106986996/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn da Controldata</a>
-    <a href="https://api.whatsapp.com/send?phone=61999210196" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp da Controldata</a>
-  </div>
-</section>
-
+  <section id="contato">
+    <h2 style="margin-bottom: 0.5rem;">Contato</h2>
+    <p style="margin-bottom: 1rem;">Fale com a gente:</p>
+    <div class="contato-links" style="display: flex; flex-direction: column; gap: 0.75rem;">
+      <a href="mailto:contato@controldata.com.br"><i class="fas fa-envelope"></i> contato@controldata.com.br</a>
+      <a href="https://www.linkedin.com/company/106986996/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn da Controldata</a>
+      <a href="https://api.whatsapp.com/send?phone=61999210196" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp da Controldata</a>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 Controldata Solutions. Todos os direitos reservados.</p>
