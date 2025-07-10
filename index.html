@@ -51,14 +51,17 @@
     header {
       background-color: #0d1b2a;
       color: #fff;
-      padding: 0.5rem 2rem; /* padding só lateral e leve vertical */
+      padding: 0.5rem 2rem;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;  /* alinha logo + nav à esquerda */
       align-items: center;
+      gap: 4rem;                    /* espaçamento entre logo e menu */
+      max-width: 1200px;            /* limita largura máxima */
+      margin: 0 auto;               /* centraliza o container */
     }
 
     .logo {
-      height: 120px; /* altura grande, ajustável */
+      height: 140px;                /* logo grande */
       width: auto;
     }
 
@@ -151,21 +154,25 @@
       margin-top: 3rem;
     }
 
-    /* RESPONSIVO */
+    /* Responsivo */
     @media (max-width: 768px) {
       header {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 1rem;
       }
 
       .logo {
-        height: 80px; /* logo menor no mobile */
-        margin-bottom: 1rem;
+        height: 100px;  /* logo menor no mobile */
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
       }
 
       nav a {
-        display: block;
         margin: 0.5rem 0;
       }
     }
@@ -213,94 +220,32 @@
 
   <section id="diferenciais">
     <h2>Por que escolher a Controldata?</h2>
-    <div
-      style="
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        justify-content: space-between;
-      "
-    >
-      <div
-        style="
-          flex: 1;
-          min-width: 220px;
-          background-color: #f1f1f1;
-          padding: 1.5rem;
-          border-radius: 8px;
-        "
-      >
-        <i
-          class="fas fa-chart-line"
-          style="font-size: 2rem; color: #1b263b"
-        ></i>
-        <h3 style="margin-top: 1rem; font-size: 1.2rem">Visão Estratégica</h3>
-        <p style="margin-top: 0.5rem">
-          Utilizamos dados como base para decisões sólidas e orientadas ao
-          futuro.
-        </p>
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between;">
+      <div style="flex: 1; min-width: 220px; background-color: #f1f1f1; padding: 1.5rem; border-radius: 8px;">
+        <i class="fas fa-chart-line" style="font-size: 2rem; color: #1b263b;"></i>
+        <h3 style="margin-top: 1rem; font-size: 1.2rem;">Visão Estratégica</h3>
+        <p style="margin-top: 0.5rem;">Utilizamos dados como base para decisões sólidas e orientadas ao futuro.</p>
       </div>
-      <div
-        style="
-          flex: 1;
-          min-width: 220px;
-          background-color: #f1f1f1;
-          padding: 1.5rem;
-          border-radius: 8px;
-        "
-      >
-        <i
-          class="fas fa-database"
-          style="font-size: 2rem; color: #1b263b"
-        ></i>
-        <h3 style="margin-top: 1rem; font-size: 1.2rem">Profundidade Técnica</h3>
-        <p style="margin-top: 0.5rem">
-          Expertise em BI, SQL e Python para extrair o máximo valor dos dados.
-        </p>
+      <div style="flex: 1; min-width: 220px; background-color: #f1f1f1; padding: 1.5rem; border-radius: 8px;">
+        <i class="fas fa-database" style="font-size: 2rem; color: #1b263b;"></i>
+        <h3 style="margin-top: 1rem; font-size: 1.2rem;">Profundidade Técnica</h3>
+        <p style="margin-top: 0.5rem;">Expertise em BI, SQL e Python para extrair o máximo valor dos dados.</p>
       </div>
-      <div
-        style="
-          flex: 1;
-          min-width: 220px;
-          background-color: #f1f1f1;
-          padding: 1.5rem;
-          border-radius: 8px;
-        "
-      >
-        <i
-          class="fas fa-users"
-          style="font-size: 2rem; color: #1b263b"
-        ></i>
-        <h3 style="margin-top: 1rem; font-size: 1.2rem">
-          Atendimento Consultivo
-        </h3>
-        <p style="margin-top: 0.5rem">
-          Acompanhamento próximo e soluções personalizadas para cada cliente.
-        </p>
+      <div style="flex: 1; min-width: 220px; background-color: #f1f1f1; padding: 1.5rem; border-radius: 8px;">
+        <i class="fas fa-users" style="font-size: 2rem; color: #1b263b;"></i>
+        <h3 style="margin-top: 1rem; font-size: 1.2rem;">Atendimento Consultivo</h3>
+        <p style="margin-top: 0.5rem;">Acompanhamento próximo e soluções personalizadas para cada cliente.</p>
       </div>
     </div>
   </section>
 
   <section id="contato">
-    <h2 style="margin-bottom: 0.5rem">Contato</h2>
-    <p style="margin-bottom: 1rem">Fale com a gente:</p>
-    <div
-      class="contato-links"
-      style="display: flex; flex-direction: column; gap: 0.75rem"
-    >
-      <a href="mailto:contato@controldata.com.br"
-        ><i class="fas fa-envelope"></i> contato@controldata.com.br</a
-      >
-      <a
-        href="https://www.linkedin.com/company/106986996/"
-        target="_blank"
-        ><i class="fab fa-linkedin"></i> LinkedIn da Controldata</a
-      >
-      <a
-        href="https://api.whatsapp.com/send?phone=61999210196"
-        target="_blank"
-        ><i class="fab fa-whatsapp"></i> WhatsApp da Controldata</a
-      >
+    <h2 style="margin-bottom: 0.5rem;">Contato</h2>
+    <p style="margin-bottom: 1rem;">Fale com a gente:</p>
+    <div class="contato-links" style="display: flex; flex-direction: column; gap: 0.75rem;">
+      <a href="mailto:contato@controldata.com.br"><i class="fas fa-envelope"></i> contato@controldata.com.br</a>
+      <a href="https://www.linkedin.com/company/106986996/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn da Controldata</a>
+      <a href="https://api.whatsapp.com/send?phone=61999210196" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp da Controldata</a>
     </div>
   </section>
 
