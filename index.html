@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Controldata Solutions</title>
+
+  <!-- Social meta tags -->
   <meta property="og:title" content="Apresentação" />
   <meta property="og:description" content="Confira nossa apresentação interativa" />
   <meta property="og:image" content="https://cdnc.heyzine.com/flip-book/cover/2b5c71d8f8.jpg" />
@@ -22,10 +25,6 @@
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:site_name" content="Apresentação" />
 
-  <meta name="description" content="Confira nossa apresentação interativa" />
-  <meta name="thumbnail" content="https://cdnc.heyzine.com/flip-book/cover/2b5c71d8f8.jpg" />
-
-  <title>Controldata Solutions</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
@@ -50,11 +49,12 @@
     header .container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0.5rem 2rem;
+      padding: 0 2rem;           /* Sem padding vertical! */
       display: flex;
       justify-content: flex-start;
       align-items: center;
       gap: 4rem;
+      line-height: 0;            /* Remove altura de linha extra */
     }
 
     .logo {
@@ -151,7 +151,7 @@
       margin-top: 3rem;
     }
 
-    /* Responsivo */
+    /* RESPONSIVO */
     @media (max-width: 768px) {
       header .container {
         flex-direction: column;
