@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Meta tags for social media sharing -->
-  <meta property="og:title" content="Apresentação">
-  <meta property="og:description" content="Confira nossa apresentação interativa">
-  <meta property="og:image" content="https://cdnc.heyzine.com/flip-book/cover/2b5c71d8f8.jpg">
-  <meta property="og:url" content="">
-  <meta property="og:type" content="website">
+  <meta property="og:title" content="Apresentação" />
+  <meta property="og:description" content="Confira nossa apresentação interativa" />
+  <meta property="og:image" content="https://cdnc.heyzine.com/flip-book/cover/2b5c71d8f8.jpg" />
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="website" />
 
   <!-- Twitter Card meta tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Apresentação">
-  <meta name="twitter:description" content="Confira nossa apresentação interativa">
-  <meta name="twitter:image" content="https://cdnc.heyzine.com/flip-book/cover/2b5c71d8f8.jpg">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Apresentação" />
+  <meta name="twitter:description" content="Confira nossa apresentação interativa" />
+  <meta name="twitter:image" content="https://cdnc.heyzine.com/flip-book/cover/2b5c71d8f8.jpg" />
 
   <!-- WhatsApp and other platforms -->
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Capa da Apresentação">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:site_name" content="Apresentação">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Capa da Apresentação" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Apresentação" />
 
-  <!-- Additional meta tags for WhatsApp -->
-  <meta name="description" content="Confira nossa apresentação interativa">
-  <meta name="thumbnail" content="https://cdnc.heyzine.com/flip-book/cover/2b5c71d8f8.jpg">
+  <meta name="description" content="Confira nossa apresentação interativa" />
+  <meta name="thumbnail" content="https://cdnc.heyzine.com/flip-book/cover/2b5c71d8f8.jpg" />
 
   <title>Controldata Solutions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/a076d05399.js"
+    crossorigin="anonymous"
+  ></script>
 
   <style>
     * {
@@ -40,28 +45,35 @@
       box-sizing: border-box;
       font-family: 'Montserrat', sans-serif;
     }
+
     body {
       background-color: #ffffff;
       color: #2c3e50;
     }
+
     header {
       background-color: #0d1b2a;
       color: #fff;
-      padding: 0.5rem 2rem; /* padding vertical pequeno para faixa não expandir muito */
+      height: 100px;         /* Altura controlada */
+      padding: 0 2rem;       /* Padding só lateral */
       display: flex;
       justify-content: space-between;
       align-items: center;
+      overflow: hidden;      /* Evita que a logo estoure */
     }
+
     .logo {
-      height: 160px;  /* logo grande */
+      height: 80px;          /* Logo proporcional à faixa */
       width: auto;
     }
+
     nav a {
       color: #fff;
       text-decoration: none;
       margin-left: 2rem;
       font-weight: 600;
     }
+
     .banner::before {
       content: "";
       position: absolute;
@@ -72,6 +84,7 @@
       background-color: rgba(0, 0, 0, 0.5);
       z-index: 0;
     }
+
     .banner {
       position: relative;
       height: 80vh;
@@ -83,16 +96,19 @@
       text-align: center;
       background: url('https://images.pexels.com/photos/583848/pexels-photo-583848.jpeg') no-repeat center center/cover;
     }
+
     .banner h1 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
       z-index: 1;
     }
+
     .banner p {
       font-size: 1.2rem;
       margin-bottom: 2rem;
       z-index: 1;
     }
+
     .banner button {
       background-color: #e0e1dd;
       color: #0d1b2a;
@@ -103,18 +119,22 @@
       cursor: pointer;
       z-index: 1;
     }
+
     section {
       padding: 4rem 2rem;
       max-width: 1000px;
       margin: auto;
     }
+
     h2 {
       margin-bottom: 1rem;
       color: #1b263b;
     }
+
     ul li {
       margin-bottom: 0.5rem;
     }
+
     .contato-links a {
       display: inline-block;
       margin-right: 1rem;
@@ -123,9 +143,11 @@
       color: #1b263b;
       font-weight: 600;
     }
+
     .contato-links a i {
       margin-right: 0.5rem;
     }
+
     footer {
       background-color: #0d1b2a;
       color: #fff;
@@ -139,7 +161,7 @@
 <body>
   <header>
     <a href="/">
-      <img src="Logo6.png" alt="Controldata Solutions" class="logo">
+      <img src="Logo6.png" alt="Controldata Solutions" class="logo" />
     </a>
 
     <nav>
@@ -157,7 +179,12 @@
 
   <section id="sobre">
     <h2>Sobre a Controldata</h2>
-    <p>A Controldata Solutions oferece serviços especializados em Business Intelligence, análise de dados e consultoria em tecnologias como SQL e Python. Nosso foco é transformar dados em insights acionáveis para tomada de decisões.</p>
+    <p>
+      A Controldata Solutions oferece serviços especializados em Business
+      Intelligence, análise de dados e consultoria em tecnologias como SQL e
+      Python. Nosso foco é transformar dados em insights acionáveis para tomada
+      de decisões.
+    </p>
   </section>
 
   <section id="servicos">
@@ -172,32 +199,94 @@
 
   <section id="diferenciais">
     <h2>Por que escolher a Controldata?</h2>
-    <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between;">
-      <div style="flex: 1; min-width: 220px; background-color: #f1f1f1; padding: 1.5rem; border-radius: 8px;">
-        <i class="fas fa-chart-line" style="font-size: 2rem; color: #1b263b;"></i>
-        <h3 style="margin-top: 1rem; font-size: 1.2rem;">Visão Estratégica</h3>
-        <p style="margin-top: 0.5rem;">Utilizamos dados como base para decisões sólidas e orientadas ao futuro.</p>
+    <div
+      style="
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: space-between;
+      "
+    >
+      <div
+        style="
+          flex: 1;
+          min-width: 220px;
+          background-color: #f1f1f1;
+          padding: 1.5rem;
+          border-radius: 8px;
+        "
+      >
+        <i
+          class="fas fa-chart-line"
+          style="font-size: 2rem; color: #1b263b"
+        ></i>
+        <h3 style="margin-top: 1rem; font-size: 1.2rem">Visão Estratégica</h3>
+        <p style="margin-top: 0.5rem">
+          Utilizamos dados como base para decisões sólidas e orientadas ao
+          futuro.
+        </p>
       </div>
-      <div style="flex: 1; min-width: 220px; background-color: #f1f1f1; padding: 1.5rem; border-radius: 8px;">
-        <i class="fas fa-database" style="font-size: 2rem; color: #1b263b;"></i>
-        <h3 style="margin-top: 1rem; font-size: 1.2rem;">Profundidade Técnica</h3>
-        <p style="margin-top: 0.5rem;">Expertise em BI, SQL e Python para extrair o máximo valor dos dados.</p>
+      <div
+        style="
+          flex: 1;
+          min-width: 220px;
+          background-color: #f1f1f1;
+          padding: 1.5rem;
+          border-radius: 8px;
+        "
+      >
+        <i
+          class="fas fa-database"
+          style="font-size: 2rem; color: #1b263b"
+        ></i>
+        <h3 style="margin-top: 1rem; font-size: 1.2rem">Profundidade Técnica</h3>
+        <p style="margin-top: 0.5rem">
+          Expertise em BI, SQL e Python para extrair o máximo valor dos dados.
+        </p>
       </div>
-      <div style="flex: 1; min-width: 220px; background-color: #f1f1f1; padding: 1.5rem; border-radius: 8px;">
-        <i class="fas fa-users" style="font-size: 2rem; color: #1b263b;"></i>
-        <h3 style="margin-top: 1rem; font-size: 1.2rem;">Atendimento Consultivo</h3>
-        <p style="margin-top: 0.5rem;">Acompanhamento próximo e soluções personalizadas para cada cliente.</p>
+      <div
+        style="
+          flex: 1;
+          min-width: 220px;
+          background-color: #f1f1f1;
+          padding: 1.5rem;
+          border-radius: 8px;
+        "
+      >
+        <i
+          class="fas fa-users"
+          style="font-size: 2rem; color: #1b263b"
+        ></i>
+        <h3 style="margin-top: 1rem; font-size: 1.2rem">
+          Atendimento Consultivo
+        </h3>
+        <p style="margin-top: 0.5rem">
+          Acompanhamento próximo e soluções personalizadas para cada cliente.
+        </p>
       </div>
     </div>
   </section>
 
   <section id="contato">
-    <h2 style="margin-bottom: 0.5rem;">Contato</h2>
-    <p style="margin-bottom: 1rem;">Fale com a gente:</p>
-    <div class="contato-links" style="display: flex; flex-direction: column; gap: 0.75rem;">
-      <a href="mailto:contato@controldata.com.br"><i class="fas fa-envelope"></i> contato@controldata.com.br</a>
-      <a href="https://www.linkedin.com/company/106986996/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn da Controldata</a>
-      <a href="https://api.whatsapp.com/send?phone=61999210196" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp da Controldata</a>
+    <h2 style="margin-bottom: 0.5rem">Contato</h2>
+    <p style="margin-bottom: 1rem">Fale com a gente:</p>
+    <div
+      class="contato-links"
+      style="display: flex; flex-direction: column; gap: 0.75rem"
+    >
+      <a href="mailto:contato@controldata.com.br"
+        ><i class="fas fa-envelope"></i> contato@controldata.com.br</a
+      >
+      <a
+        href="https://www.linkedin.com/company/106986996/"
+        target="_blank"
+        ><i class="fab fa-linkedin"></i> LinkedIn da Controldata</a
+      >
+      <a
+        href="https://api.whatsapp.com/send?phone=61999210196"
+        target="_blank"
+        ><i class="fab fa-whatsapp"></i> WhatsApp da Controldata</a
+      >
     </div>
   </section>
 
